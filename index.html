@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máscara</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="confirmacao" style="display: none;">Sua mensagem foi enviada com sucesso</header>
+    <h3>Welcome</h3>
+    <form>
+        <div>
+            <label for="">Digite seu nome</label>
+            <input type="text" placeholder="Seu nome...">
+        </div>
+        <div>
+            <label for="">Seu endereço</label>
+            <input type="text" placeholder="Informe seu endereço">
+        </div>
+        <div>
+            <label for="">CEP</label>
+            <input type="text" placeholder="xx.xxx-xxx" id="cep" oninput="mascara_cep()" maxlength="10">
+        </div>
+        <div>
+            <label for="">CPF</label>
+            <input type="text" placeholder="xxx.xxx.xxx-xx" id="cpf" oninput="mascara_cpf()" maxlength="14"></div>
+        </div>
+        <div>
+            <label for="">Tel</label>
+            <input type="tel" placeholder="(31)99999-9999" id="telefone"  oninput="mascara_telefone()" maxlength="14">
+        </div>
+        <div>
+            <label for="">CNPJ</label>
+            <input type="text" placeholder="XX.XXX.XXX/XXXX-XX" id="cnpj" oninput="mascara_cnpj()" maxlength="18">
+        </div>
+        <div>
+            <label for="">Código</label>
+            <input type="text" placeholder=" xx_xx//xxx-xxx.9.xxx" id="codigo" oninput="mascara_codigo()" maxlength="20">
+        </div>
+        <input type="button" id="enviar" value="Enviar" onclick="enviar()">
+    </form>
+</body>
+</html>

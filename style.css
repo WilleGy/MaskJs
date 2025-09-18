@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    height: 100vh;
+    overflow-y: hidden;
+    background: linear-gradient(-45deg, #ae7ce7, #ffe7ec, #FFFAD2, #ff9efa);
+    background-size: 400% 400%;
+    animation: aurora 5s ease infinite;
+}
+
+@keyframes aurora {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+#confirmacao{
+    display: none;
+    position: fixed;
+    height: 50px;
+    width: 80%;
+    top: 0%;
+    background-color: rgb(217, 174, 236);
+    border: 2px solid rgb(82, 38, 95);
+}
+
+label{
+    font-family: Afacad, Arial;
+    font-size: 18px;
+    display: block;
+    font-weight: 400;
+}
+
+h3{
+    color: rgb(0, 185, 130);
+    font-family: Afacad, Arial;
+    font-size: 42px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+form{
+    background-color: rgb(0, 185, 130);
+    width: 26%;
+    height: 85vh;
+    position: absolute;
+    transform: translateX(50%);
+    right: 50%;
+    text-align: left;
+    padding: 2% 2.5%;
+    box-sizing: border-box;    
+}
+
+input{
+    height: 27px;
+    width: 95%;
+    margin-bottom: 10px;
+}
+
+#enviar{
+    margin-top: 10px;
+    width: 100% !important;
+    background-color: rgb(180, 255, 232);
+    border: 2px solid rgb(0, 185, 130);
+    font-family: Afacad, Arial;
+    font-size: 16px;
+    height: 35px !important;
+    transition: 0.3s;
+}
+
+#enviar:hover{
+    background-color: rgb(0, 117, 72);
+    color: white;
+    transition: 0.3s;
+}
