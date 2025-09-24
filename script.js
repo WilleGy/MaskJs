@@ -1,5 +1,6 @@
-function enviar() {
-    document.getElementById("confirmacao").style.display = "block";
+function enviarFormulario() {
+  alert("Formulário enviado!");
+  return false;
 }
 
 function mascara_cep(){
