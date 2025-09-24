@@ -44,21 +44,26 @@ h3{
 }
 
 form{
-    background-color: rgb(0, 185, 130);
-    width: 26%;
-    height: 85vh;
+    display: grid;
     position: absolute;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(0, 185, 130);
     transform: translateX(50%);
     right: 50%;
+    width: 50%;
+    gap: 20px;
     text-align: left;
-    padding: 2% 2.5%;
-    box-sizing: border-box;    
+    border-radius: 20px;
+    padding: 30px 20px;
 }
 
 input{
     height: 27px;
-    width: 95%;
-    margin-bottom: 10px;
+    width: 100%;
+}
+
+#nome_campo{
+    grid-column: 1 / 3;
 }
 
 #enviar{
@@ -70,6 +75,7 @@ input{
     font-size: 16px;
     height: 35px !important;
     transition: 0.3s;
+    grid-column: 1 / 3;
 }
 
 #enviar:hover{
@@ -77,3 +83,4 @@ input{
     color: white;
     transition: 0.3s;
 }
+
