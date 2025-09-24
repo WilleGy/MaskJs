@@ -13,8 +13,8 @@
 <body>
     <header id="confirmacao" style="display: none;">Sua mensagem foi enviada com sucesso</header>
     <h3>Welcome</h3>
-    <form>
-        <div>
+    <form action="" onsubmit="return enviarFormulario()">
+        <div id="nome_campo">
             <label for="">Digite seu nome</label>
             <input type="text" placeholder="Seu nome...">
         </div>
@@ -42,7 +42,7 @@
             <label for="">Código</label>
             <input type="text" placeholder=" xx_xx//xxx-xxx.9.xxx" id="codigo" oninput="mascara_codigo()" maxlength="20">
         </div>
-        <input type="button" id="enviar" value="Enviar" onclick="enviar()">
+        <input type="submit" id="enviar">
     </form>
 </body>
 </html>
